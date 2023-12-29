@@ -6,7 +6,7 @@ This document is a System Administration related exercise.
 ### what is a virtual machine ?
  - A virtual machine (VM) is a software-based emulation of a physical computer.
  - It enables you to run multiple operating systems (OS) or instances of the same OS on a single physical machine, known as the host machine.
- <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dnsstuff.com%2Fwhat-is-hypervisor&psig=AOvVaw2TgAFkLoe1Tde9RcqhaKOO&ust=1703945101670000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjss6botIMDFQAAAAAdAAAAABAD">
+ <img src="https://www.dnsstuff.com/wp-content/uploads/2019/10/what-is-hypervisor.jpg">
 
 
 
