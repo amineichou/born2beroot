@@ -1,6 +1,6 @@
 wall "	#Architecture: $(uname -a)
-	#CPU physical : $(lscpu | grep "CPU(s)" | awk 'NR==1' | awk '{print $2}')
-	#vCPU : $(lscpu | grep "CPU(s)" | awk 'NR==1' | awk '{print $2}')
+	#CPU physical : $(grep "physical id" /proc/cpuinfo | wc -l)
+	#vCPU : $(grep "processor" /proc/cpuinfo | wc -l)
 	#Memory Usage: $(free --mega | awk 'NR==2' | awk '{printf "%d/%dMB (%.2f%%)", $3, $2, $3 / $2 * 100}')
 	#Disk Usage: $(df -h --total | awk 'NR==10' | awk  '{printf "%d/%dGb (%.f%%)" , $3 * 1024, $2, $3 / $2 * 100}')
 	#CPU Load: $(mpstat | awk 'NR==4' | awk '{printf "%.1f%%", 100 - $13}')
