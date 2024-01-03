@@ -9,4 +9,4 @@ wall "	#Architecture: $(uname -a)
 	#Connections TCP : $(netstat -an | grep ESTABLISHED | wc -l) ESTABLISHED
 	#User log: $(who | awk '{print $1}' | sort -u | wc -l)
 	#Network: IP $(hostname -I) $(ip a | grep "link/ether" | awk '{print "("$2")"}')
-	#Sudo : $(sudo journalctl _COMM=sudo -q | grep COMMAND | wc -l) cmd"
+	#Sudo : $(journalctl _COMM=sudo -q | grep COMMAND | wc -l) cmd"
