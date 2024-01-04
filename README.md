@@ -53,7 +53,7 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 4. List the active rules in UFW : `sudo ufw status`
 5. Add a new rules to open port 8080 : `sudo ufw allow 8080`
 6. Delete the new rule : `sudo ufw delete 8080`
-7. Basic Commands:
+#### Basic Commands :
 - `ufw enable` : Turns on the firewall.
 - `ufw disable` : Turns off the firewall.
 - `ufw allow|deny` : Sets the default behavior for incoming connections.
