@@ -59,3 +59,6 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 - verify password expire info for new user using chage command : `sudo chage -l username`
 - assign the new user to sudo group: `sudo adduser username sudo`
 - assign the new user to user42 group: `sudo adduser username user42`
+4. Create a group and add the new user to this group.
+- creating new group: `sudo groupadd groupname`
+- add the new user to the new group: `sudo adduser username groupname`
