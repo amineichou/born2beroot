@@ -21,13 +21,15 @@ This document is a System Administration related exercise.
 ### what is File System ?
  - is a method used by an operating system to organize and store files on a storage medium, such as a hard drive, solid-state drive, or any other storage device. It provides structure and a set of rules for how data is stored, accessed, and managed.
 
+### What is appArmor ?
+ - AppArmor is a Linux kernel security module used for access control and mandatory access control (MAC). It acts as an additional layer of security to confine programs, processes, or applications within predefined security profiles, limiting their capabilities and access to system resources.
+
+### apt vs aptitude :
+ - `apt` and `aptitude` are package management tools in Debian-based Linux distributions like Ubuntu. They serve similar purposes but have some differences in their functionalities and user interfaces.
+
 ### What is SSH ?
  - SSH stands for Secure Shell, which is a network protocol that allows secure communication between two computers by establishing a secure connection. It's commonly used for remote access to systems, file transfers, and executing commands on a remote machine.
  <img src="https://www.ipxo.com/app/uploads/2022/02/What-is-SSH-820x460.jpg">
-
-
-### What is appArmor ?
- - AppArmor is a Linux kernel security module used for access control and mandatory access control (MAC). It acts as an additional layer of security to confine programs, processes, or applications within predefined security profiles, limiting their capabilities and access to system resources.
 
 ### TCP vs UDP
 TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols used for transmitting data over networks, but they have different characteristics and are suited for different purposes.
