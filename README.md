@@ -97,6 +97,6 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 ### Hostname :
 - Get hostname : `hostname`
 - Change hostname: `sudo vim /etc/hostname` + reboot the machine : `sudo reboot`
-- 
+
 ### Partitions :
 - Check partitions: `lsblk`
