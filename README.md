@@ -11,8 +11,8 @@ This document is a `System Administration` related exercise.
 ### What is a `Hypervisor`?
 - A hypervisor is a software or firmware that creates and runs virtual machines (VMs) by allowing multiple operating systems to share a single hardware host. It enables the virtualization of computer hardware, essentially acting as a layer between the physical hardware and the virtual machines.
 - Types of hypervisors :
-    1. Type 1 Hypervisor (Bare-Metal Hypervisor): This type runs directly on the host's hardware to control the hardware and manage guest operating systems. Examples include VMware ESXi, Microsoft Hyper-V, and Xen.
-    2. Type 2 Hypervisor (Hosted Hypervisor): This type runs on top of a host operating system and allows multiple guest operating systems to run within it. Examples include VMware Workstation, Oracle VirtualBox, and Parallels Desktop.
+1. Type 1 Hypervisor (Bare-Metal Hypervisor): This type runs directly on the host's hardware to control the hardware and manage guest operating systems. Examples include VMware ESXi, Microsoft Hyper-V, and Xen.
+2. Type 2 Hypervisor (Hosted Hypervisor): This type runs on top of a host operating system and allows multiple guest operating systems to run within it. Examples include VMware Workstation, Oracle VirtualBox, and Parallels Desktop.
     <img src="https://www.parkplacetechnologies.com/wp-content/uploads/2022/02/type-1-hypervisor-vs-type-2-2048x999.png">
 
 ### What is `LVM` ?
@@ -55,4 +55,7 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 - `getent group sudo` / `getent group group_name`
 2. Create a new user :
 -  `sudo adduser username`
-- asign a password to it resoecting the password quality rules.
+- assign a password to it resoecting the password quality rules.
+- verify password expire info for new user using chage command : `sudo chage -l username`
+- assign the new user to sudo group: `sudo adduser username sudo`
+- assign the new user to user42 group: `sudo adduser username user42`
