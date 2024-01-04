@@ -43,7 +43,7 @@ This document is a `System Administration` related exercise.
 
 ### What is `SSH` ?
 - SSH stands for Secure Shell, which is a network protocol that allows secure communication between two computers by establishing a secure connection. It's commonly used for remote access to systems, file transfers, and executing commands on a remote machine.
-1. connect ssh : `ssh username@ip_address -p 'PORT'`
+1. connect ssh : `ssh username@ip_address -p PORT`
 2. Check that the "SSH" service is installed : `dpkg -l | grep ssh`
 3. Check that the SSH is working : `sudo service ssh status`
 
