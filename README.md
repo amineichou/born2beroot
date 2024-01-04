@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    README.MD                                          :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: moichou <moichou@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/01/04 17:47:56 by moichou           #+#    #+#              #
+#    Updated: 2024/01/04 17:48:01 by moichou          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # Born2beroot
 This document is a `System Administration` related exercise.
 
@@ -46,9 +58,11 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 ### What is a `Firewall`?
 - A firewall is a network security system designed to monitor and control incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks (like the internet), filtering the traffic that passes through it.
 
-### SUDO : 
+### SUDO :
 - stands for "superuser do" and is a command used in Unix-like operating systems to execute commands with elevated privileges or as another user, typically the system administrator (superuser or root).
 - `sudo command`
 
 ### USER :
-- 
+1. Check that a user has been added and to the "sudo" group or any other group.
+- `sudo getent group sudo` / `sudo getent group group_name`
+2. Create a new user. Assign it a password of your choice, respecting the subject rule

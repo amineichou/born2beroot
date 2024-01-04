@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    monitoring.sh                                      :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: moichou <moichou@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/01/04 17:47:56 by moichou           #+#    #+#              #
+#    Updated: 2024/01/04 17:48:01 by moichou          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 wall "	#Architecture: $(uname -a)
 	#CPU physical : $(grep "physical id" /proc/cpuinfo | wc -l)
 	#vCPU : $(grep "processor" /proc/cpuinfo | wc -l)
