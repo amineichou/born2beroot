@@ -46,9 +46,24 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 ### What is a `Firewall`?
 - A firewall is a network security system designed to monitor and control incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks (like the internet), filtering the traffic that passes through it.
 
+### UFW
+1. ufw stands for Uncomplicated Firewall. It is a user-friendly front-end for managing netfilter, the firewall in the Linux kernel (specifically, iptables). It simplifies the process of setting up and managing a firewall on Linux systems.
+2. Check that the "UFW" program is installed : `dpkg -l | grep ufw`
+3. Check that it is working properly : `sudo service ufw status`
+4. List the active rules in UFW : `sudo ufw status`
+5. Add a new rules to open port 8080 : `sudo ufw allow 8080`
+6. Delete the new rule : `sudo ufw delete 8080`
+7. Basic Commands:
+- `ufw enable` : Turns on the firewall.
+- `ufw disable` : Turns off the firewall.
+- `ufw allow|deny` : Sets the default behavior for incoming connections.
+- `ufw allow <port>/<protocol>` : Opens a specific port for a protocol.
+- `ufw deny <port>/<protocol>` : Denies access to a specific port for a protocol.
+
 ### SUDO :
 - stands for "superuser do" and is a command used in Unix-like operating systems to execute commands with elevated privileges or as another user, typically the system administrator (superuser or root).
 - `sudo command`
+- Check if sudo is installed : `dpkg -l sudo`
 
 ### USER :
 #### 1. Check that a user has been added and to the "sudo" group or any other group.
@@ -64,3 +79,10 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 - add the new user to the new group: `sudo adduser username groupname`
 #### 4. Check if that user belongs to the "evaluating" group.
 - `sudo getent group evaluating`
+
+### Hostname :
+- Get hostname : `hostname`
+- Change hostname: `sudo vim /etc/hostname` + reboot the machine : `sudo reboot`
+- 
+### Partitions :
+- Check partitions: `lsblk`
