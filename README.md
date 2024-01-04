@@ -23,12 +23,14 @@ This document is a `System Administration` related exercise.
 
 ### What is `appArmor` ?
  - AppArmor is a Linux kernel security module used for access control and mandatory access control (MAC). It acts as an additional layer of security to confine programs, processes, or applications within predefined security profiles, limiting their capabilities and access to system resources.
+ - Check appArmor status `sudo aa-status`
 
 ### `apt` vs `aptitude` :
  - apt and aptitude are package management tools in Debian-based Linux distributions like Ubuntu. They serve similar purposes but have some differences in their functionalities and user interfaces.
 
 ### What is `SSH` ?
  - SSH stands for Secure Shell, which is a network protocol that allows secure communication between two computers by establishing a secure connection. It's commonly used for remote access to systems, file transfers, and executing commands on a remote machine.
+ - connect ssh : `ssh username@ip_address -p 'PORT'`
  <img src="https://www.ipxo.com/app/uploads/2022/02/What-is-SSH-820x460.jpg">
 
 ### `TCP` vs `UDP`
@@ -43,3 +45,7 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 
 ### What is a `Firewall`?
  - A firewall is a network security system designed to monitor and control incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between a trusted internal network and untrusted external networks (like the internet), filtering the traffic that passes through it.
+
+### SUDO : 
+- stands for "superuser do" and is a command used in Unix-like operating systems to execute commands with elevated privileges or as another user, typically the system administrator (superuser or root).
+- `sudo command`
