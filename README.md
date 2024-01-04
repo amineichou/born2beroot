@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    README.MD                                          :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: moichou <moichou@student.42.fr>            +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/01/04 17:47:56 by moichou           #+#    #+#              #
-#    Updated: 2024/01/04 17:48:01 by moichou          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 # Born2beroot
 This document is a `System Administration` related exercise.
 
@@ -64,5 +52,7 @@ TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both tr
 
 ### USER :
 1. Check that a user has been added and to the "sudo" group or any other group.
-- `sudo getent group sudo` / `sudo getent group group_name`
-2. Create a new user. Assign it a password of your choice, respecting the subject rule
+- `getent group sudo` / `getent group group_name`
+2. Create a new user :
+-  `sudo adduser username`
+- asign a password to it resoecting the password quality rules.
